@@ -1,0 +1,106 @@
+html
+    margin: 0
+    padding: 0
+body
+    margin: 0
+    padding: 0
+.menu
+  background-color: #1a5f75
+  border-bottom: 1px solid #a2a2a2
+  height: 57px
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: center
+  padding-left: 5%
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 4
+  .menu__logo
+    font-family: Roboto-Thin
+    font-size: 23px
+    font-weight: 300
+    color: #e1eaed
+    text-transform: uppercase
+    text-decoration: none
+    margin-right: 5%
+    margin-left: 5%
+    &:hover
+      color: #fff
+  .menu__search
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    width: 50%
+    margin-left: 0%
+    .menu__search__label
+      margin: 0px -36px 0px 0px
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+      flex-wrap: nowrap
+      z-index: 2
+      img
+        display: inline-block
+      i
+        display: inline-block
+        margin-left: 5px
+    .menu__search__input
+      outline: none
+      border-radius: 3px
+      width: 100%
+      padding-left: 40px
+      font-family: Roboto-Light
+      border-color: transparent
+    .menu__search__submit
+      margin-left: -30px
+      border: none
+      outline: none
+      background-color: transparent
+      &:hover
+        cursor: pointer
+  .menu__right
+    position: absolute
+    right: 20px
+    top: 11px
+    bottom: 10px
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    .menu__right__user
+      img
+        width: 38px
+        height: 38px
+        border: 1px solid transparent
+        border-radius: 50%
+        &:hover
+          border: 1px solid #e1eaed
+          cursor: pointer
+    .menu__right__bell
+      margin-right: 15px
+      font-size: 23px
+      color: #282b2c
+      text-decoration: none
+      position: relative
+      &:hover
+        color: #e1eaed
+      .menu__right__bell__notification
+        position: absolute
+        top: 0
+        right: -7px
+        background-color: #ff0000
+        color: #fff
+        padding: 0px 4px
+        margin: 0
+        font-size: 12px
+        border-radius: 50%
+@media only screen and (max-width: 480px)
+  .menu
+    .menu__logo
+      margin-left: 0
+

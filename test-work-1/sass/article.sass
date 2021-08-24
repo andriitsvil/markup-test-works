@@ -1,0 +1,208 @@
+.fixed__background
+  position: absolute
+  z-index: 0
+  top: 0px
+  left: 0
+  right: 0
+  min-height: 560px
+  max-height: 800px
+  height: auto
+  background-image: url('../img/bg.png')
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+article
+  max-width: 1020px
+  width: 100%
+  height: auto
+  background-color: transparent
+  margin-top: 18vw
+  .main
+    padding: 5px
+    flex-wrap: wrap-reverse
+    .main__children
+      margin-left: auto
+      margin-right: auto
+      .main__chidren__header
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-items: flex-start
+        flex-wrap: wrap
+        margin-bottom: 50px
+        padding-left: 20px
+        img
+          display: inline-block
+          margin-top: 10px
+          margin-right: 20px
+        .main__chidren__header__text
+          display: inline-block
+          color: #fff
+          font-family: Roboto-Light
+          h1
+            font-size: 40px
+          p
+            font-size: 14px
+      .main__children__content
+        background-color: #fff
+        width: 100%
+        height: auto
+        padding: 40px 40px 50px 45px
+        position: relative
+        margin-bottom: 20px
+        box-shadow: 0 2px 7px rgba(0,0,0,0.5)
+        img
+          position: absolute
+          top: 42px
+          left: 30px
+        .main__children__content_top
+          display: flex
+          flex-direction: row
+          justify-content: space-between
+          align-items: center
+          &:hover
+            cursor: pointer
+          h2
+            font-family: Roboto-Regular
+            font-size: 24px
+            margin-left: 30px
+          i
+            font-size: 24px
+            &:hover
+              cursor: pointer       
+        .main__children__content__hidden
+          font-family: Roboto-Light
+          font-size: 14px
+          margin-left: 30px
+          font-weight: 600
+          max-width: 550px
+          display: none
+        .active1
+          display: block
+    .main__courses
+      margin-left: auto
+      margin-right: auto
+      max-width: 300px
+      .main__courses__header
+        margin-bottom: 65px
+        padding-left: 5px
+        .main__courses__header__text
+          color: #fff
+          font-family: Roboto-Light
+          h1
+            font-size: 40px
+          p
+            font-size: 14px
+      .main__courses__content
+        background-color: #fff
+        box-shadow: 0 0 10px rgba(0,0,0,0.5)
+        width: 100%
+        height: auto
+        position: relative
+        img.main__courses__content__logo
+          position: absolute
+          left: 22px
+          top: -15px
+          background-color: #fff
+          border-radius: 3px
+          box-shadow: 0 0 10px rgba(0,0,0,0.5)
+          z-index: 2
+          padding: 5px
+        img.main__courses__content__star
+          position:  absolute
+          top: 10px
+          right: 15px
+          width: 24px
+          height: 23px
+          &:hover
+            cursor: pointer
+        .main__courses__content_top
+          padding: 40px 10px 10px 10px
+          overflow: hidden
+          img
+            height: auto
+            width: 100%
+            display: block
+            margin-left: auto
+            margin-right: auto
+          .main__courses__content_top_school
+            display: flex
+            flex-direction: row
+            justify-content: flex-start
+            align-items: flex-start
+            flex-wrap: nowrap
+            margin-top: 10px
+            img
+              width: 20px
+              height: 20px
+              margin: 0px 10px 0px 0px
+            h3
+              font-family: Roboto-Light
+              font-size: 18px
+              color: #000
+          p
+            font-family: Roboto-Light
+            font-size: 14px
+            color: #333333
+            font-weight: 500
+          .main__courses__content_top_adress
+            display: flex
+            flex-direction: row
+            justify-content: flex-start
+            align-items: flex-start
+            flex-wrap: nowrap
+            margin-top: 10px
+            img
+              width: 14px
+              height: 21px
+              margin: 0px 10px 0px 0px
+            p
+              font-family: Roboto-Light
+              font-size: 14px
+              color: #4c4c4c
+              font-weight: 500
+              margin-bottom: 0
+@media only screen and (max-width: 768px)
+  article
+    margin-top: 75px
+    .main
+      .main__courses 
+        .main__courses__header
+          display: none
+      .main__children
+        .main__chidren__header
+          flex-direction: column
+          justify-content: space-around
+          align-items: center
+          margin-top: 20px
+          margin-bottom: 5px
+          img
+            margin-left: auto
+            margin-right: auto
+          .main__chidren__header__text 
+            h1
+              font-size: 26px
+              margin-left: auto
+              margin-right: auto
+              text-align: center
+              margin-top: 10px
+            p
+              display: none
+        .main__children__content
+          padding: 40px 15px 25px 15px
+          .main__children__content__hidden
+            margin-left: 0
+            margin-top: 15px
+          img
+            top: 8px
+            left: calc(50% - 15px)
+          .main__children__content_top
+            i
+              display: none
+          .main__children__content_top
+            h2
+              font-size: 22px
+  .fixed__background
+    min-height: 760px
+    
+  

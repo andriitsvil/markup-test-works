@@ -1,0 +1,136 @@
+
+.slider
+  margin-bottom: 5px
+  padding: 10px 0px
+  position: relative
+  .slider__navigation
+    max-width: 1115px
+    width: 100%
+    z-index: 0
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    margin-left: auto
+    margin-right: auto
+    position: absolute
+    top: 255px
+    left: calc((100% - 1110px)/2)
+    .slider__navigation__prew
+      padding: 10px 15px
+      background-color: #fff
+      box-shadow: 0 0 10px rgba(0,0,0,0.5)
+      &:hover
+        filter: grayscale(100%)
+        cursor: pointer
+      &:active
+        box-shadow: 0 0 10px rgba(0,0,0,0)
+    .slider__navigation__next
+      padding: 10px 15px
+      background-color: #fff
+      box-shadow: 0 0 10px rgba(0,0,0,0.5)
+      &:hover
+        filter: grayscale(100%)
+        cursor: pointer
+      &:active
+        box-shadow: 0 0 10px rgba(0,0,0,0)
+  h2
+    font-family: Roboto-Light
+    font-size: 28px
+    color: #000
+    max-width: 1020px
+    margin-left: auto
+    margin-right: auto
+    width: 100%
+    padding-left: 35px
+    margin-top: 0px
+  .slider__wrapper
+    max-width: 1010px
+    margin-left: auto
+    margin-right: auto
+    margin-top: 30px
+    height: 400px
+    .slider__courses__content
+      background-color: #fff
+      box-shadow: 0 0 10px rgba(0,0,0,0.5)
+      width: 100%
+      height: auto
+      overflow: visible
+      margin: 20px 0px 10px 2px
+      position: relative
+      .slider__courses__content__logo
+        position: absolute
+        z-index: 3
+        left: 22px
+        top: -8px
+        width: 59px
+        height: auto
+        background-color: #fff
+        border-radius: 3px
+        box-shadow: 0 0 10px rgba(0,0,0,0.5)
+        z-index: 2
+        padding: 5px
+      .slider__courses__content__star
+        position:  absolute
+        top: 10px
+        right: 15px
+        width: 24px
+        height: 23px
+        &:hover
+          cursor: pointer
+      .slider__courses__content_top
+        padding: 40px 10px 10px 10px
+        overflow: visible
+        position: relative
+        img
+          height: auto
+          width: 100%
+          display: block
+          margin-left: auto
+          margin-right: auto
+        .slider__courses__content_top_school
+          display: flex
+          flex-direction: row
+          justify-content: flex-start
+          align-items: flex-start
+          flex-wrap: nowrap
+          margin-top: 10px
+          img
+            width: 20px
+            height: 20px
+            margin: 0px 10px 0px 0px
+          h3
+            font-family: Roboto-Light
+            font-size: 18px
+            color: #000
+        p
+          font-family: Roboto-Light
+          font-size: 14px
+          color: #333333
+          font-weight: 500
+        .slider__courses__content_top_adress
+          display: flex
+          flex-direction: row
+          justify-content: flex-start
+          align-items: flex-start
+          flex-wrap: nowrap
+          margin-top: 10px
+          img
+            width: 14px
+            height: 21px
+            margin: 0px 10px 0px 0px
+          p
+            font-family: Roboto-Light
+            font-size: 14px
+            color: #4c4c4c
+            font-weight: 500
+            margin-bottom: 0
+.box
+  padding: 5px
+@media only screen and (max-width: 1140px)
+  .slider__navigation
+    display: none
+@media only screen and (max-width: 480px)
+  .slider
+    h2
+      text-align: center

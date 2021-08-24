@@ -1,0 +1,691 @@
+@font-face
+    font-family: Roboto-Light
+    src: url('../fonts/RobotoLight/RobotoLight.eot')
+    src: url('../fonts/RobotoLight/RobotoLight.eot?#iefix') format('embedded-opentype')
+    src: url('../fonts/RobotoLight/RobotoLight.ttf') format('truetype')
+    src: url('../fonts/RobotoLight/RobotoLight.woff')  format('woff')
+    font-weight: lighter
+    font-style: normal
+@font-face
+    font-family: Roboto-Medium
+    src: url('../fonts/RobotoMedium/RobotoMedium.eot')
+    src: url('../fonts/RobotoMedium/RobotoMedium.eot?#iefix') format('embedded-opentype')
+    src: url('../fonts/RobotoMedium/RobotoMedium.ttf') format('truetype')
+    src: url('../fonts/RobotoMedium/RobotoMedium.woff')  format('woff')
+    font-weight: normal
+    font-style: normal
+@font-face
+    font-family: Roboto-Regular
+    src: url('../fonts/RobotoRegular/RobotoRegular.eot')
+    src: url('../fonts/RobotoRegular/RobotoRegular.eot?#iefix') format('embedded-opentype')
+    src: url('../fonts/RobotoRegular/RobotoRegular.ttf') format('truetype')
+    src: url('../fonts/RobotoRegular/RobotoRegular.woff')  format('woff')
+    font-weight: normal
+    font-style: normal
+@font-face
+    font-family: Roboto-Bold
+    src: url('../fonts/RobotoBold/RobotoBold.eot')
+    src: url('../fonts/RobotoBold/RobotoBold.eot?#iefix') format('embedded-opentype')
+    src: url('../fonts/RobotoBold/RobotoBold.ttf') format('truetype')
+    src: url('../fonts/RobotoBold/RobotoBold.woff')  format('woff')
+    font-weight: normal
+    font-style: normal
+@keyframes left-navbar-desktop
+  0%
+    transform: rotateY(0deg)
+  100%
+    transform: rotateY(360deg)
+html
+  margin: 0
+  padding: 0
+body
+  margin: 0
+  padding: 0
+  &::-webkit-scrollbar-track
+    border-radius: 2px
+  &::-webkit-scrollbar
+    width: 4px
+  &::-webkit-scrollbar-thumb
+    border-radius: 4px
+    background: #f0f2f5
+  &:hover::-webkit-scrollbar-thumb
+    background: #19b8a5
+.header
+  z-index: 2
+  height: 75px
+  border-bottom: 1px solid #e7e7e7
+  box-shadow: 0 1px 3px #eaedf4
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  overflow: hidden
+  .logo
+    border-right: 1px solid #e7e7e7
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    height: 100%
+    max-width: 250px
+    .logo-image
+      height: 100%
+      width: auto
+      display: block
+      max-width: 250px
+    .hamburger
+      display: none
+      width: 30px
+      height: 20px
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+      //transition: all 0.1s ease-in 0s
+      .line
+        width: 30px
+        //transition: all 0.1s ease-in 0s
+        height: 3px
+        border-radius: 1.5px
+        background-color: #8b8b8b
+  .navbar-left
+    height: 100%
+    max-width: 60vw
+    width: 100%
+    transition: all 0.5s ease-in 0s
+    .navbar-left-item
+      height: 100%
+      text-align: center
+      width: auto
+      display: inline-flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      text-decoration: none
+      color: #8b8b8b
+      font-family: Roboto-Medium, sans-serif
+      border-left: 1px solid transparent
+      border-right: 1px solid transparent
+      padding: 0 10px
+      &:hover
+        color: #10bda9
+        border-left: 1px solid #e7e7e7
+        border-right: 1px solid #e7e7e7
+        background-color: #f7f7f7
+        i
+          animation-name: left-navbar-desktop
+          animation-duration: 0.5s
+          animation-timing-function: ease-out
+      &:active
+        color: #10bda9
+        border-left: 1px solid #e7e7e7
+        border-right: 1px solid #e7e7e7
+        background-color: #f7f7f7
+      span
+        margin-top: 10px
+  .navbar-right
+    height: 100%
+    width: auto
+    display: flex
+    flex-wrap: nowrap
+    .user
+      display: inline-flex
+      flex-direction: row
+      justify-content: flex-end
+      align-items: center
+      height: 100%
+      width: auto
+      //margin-right: -4px
+      &:hover
+        cursor: pointer
+        .user-description
+          background-color: #f7f7f7
+      img
+        max-height: 75px
+        width: auto
+        border-left: 1px solid #e7e7e7
+      .user-description
+        text-align: right
+        height: 100%
+        border-left: 1px solid #e7e7e7
+        max-width: 175px
+        padding: 0 10px
+        width: auto
+        p
+          color: #10bda9
+          margin-bottom: 5px
+          margin-right: 5px
+          font-family: Roboto-Medium,sans-serif
+          font-size: 14px
+          color: #10bda9
+          max-width: 140px
+          font-weight: 500
+          white-space: nowrap
+          text-overflow: ellipsis
+          overflow: hidden
+        span
+          text-transform: uppercase
+          color: #bcbcbc
+          font-size: 14px
+          margin-right: 5px
+          font-family: Roboto-Regular
+          font-weight: 500
+    .additional-menu
+      height: 102%
+      width: auto
+      display: inline-flex
+      justify-content: flex-end
+      align-items: flex-start
+      flex-wrap: nowrap
+      .additional-menu-item
+        display: inline-flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: auto
+        height: 100%
+        margin-left: 0
+        margin-right: 0
+        text-decoration: none
+        padding: 0 10px
+        color: #fff
+        font-family: Roboto-Medium, sans-serif
+        font-size: 13px
+        span
+          margin-top: 10px
+        &:nth-child(1)
+          background-color: #10bda9
+          &:hover
+            background-color: #4daca0
+            i
+              animation-name: left-navbar-desktop
+              animation-duration: 0.5s
+              animation-timing-function: ease-out
+        &:nth-child(2)
+          background-color: #c55a5a
+          &:hover
+            background-color: #d14343
+            i
+              animation-name: left-navbar-desktop
+              animation-duration: 0.5s
+              animation-timing-function: ease-out
+.left-panel
+  width: 250px
+  border-right: 1px solid #e7e7e7
+  border-bottom: 1px solid #e7e7e7
+  background-color: #fff
+  padding: 20px 0
+  display: inline-block
+  .main-logs
+    overflow: auto
+    height: 82vh
+    &::-webkit-scrollbar-track
+      border-radius: 2px
+    &::-webkit-scrollbar
+      width: 4px
+    &::-webkit-scrollbar-thumb
+      border-radius: 4px
+      background: #f0f2f5
+    &:hover::-webkit-scrollbar-thumb
+      background: #19b8a5
+    .log
+      background-color: #fff
+      padding: 10px
+      a
+        color: #19b8a5
+        text-decoration: none
+        font-family: Roboto-Light, sans-serif
+        font-size: 14px
+        &:hover
+          text-decoration: underline
+      p
+        margin: 5px 0 10px
+        color: #333
+        font-family: Roboto-Light, sans-serif
+        font-size: 14px
+      .log-info
+        color: #acacac
+        span
+          font-family: Roboto-Light, sans-serif
+          font-size: 14px
+.content
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: flex-start
+  flex-wrap: nowrap
+  .main-calendar
+    max-width: 80vw
+    width: 100%
+    min-width: 300px
+    display: inline-flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: flex-start
+    flex-wrap: nowrap
+    margin-top: 15px
+    .calendar
+      max-width: 70%
+      width: 100%
+      min-width: 200px
+      height: auto
+      background-color: #fff
+      border: 1px solid #e7e7e7
+      margin: 5px
+      #calendar2
+        width: 100%
+        font-family: Roboto-Medium, sans-serif
+        font-size: 16px
+        text-align: center
+        .calendar-disable-day
+          border: 1px solid transparent
+          opacity: 0
+          &:hover
+            background-color: transparent
+            border: 1px solid transparent
+            cursor: default
+        .holiday
+          color: rgb(231, 140, 92)
+        thead
+          tr
+            &:last-child
+              color: #0bb6a2
+            &:nth-child(1)
+              color: #8b8b8b
+              border-bottom: 1px solid #8b8b8b
+              td
+                &:nth-child(1)
+                  &:hover
+                    background-color: #f7f7f7
+                    color: #0bb6a2
+                    cursor: pointer
+                &:nth-child(3)
+                  &:hover
+                    background-color: #f7f7f7
+                    color: #0bb6a2
+                    cursor: pointer
+            &:nth-child(2)
+            height: 4vw
+        tbody
+          tr
+            td
+              height: 4vw
+              border-radius: 3px
+              border: 1px solid #8b8b8b
+              margin: 2px
+              color: #8b8b8b
+              &:hover
+                cursor: pointer
+                border: 1px solid #0bb6a2
+                background-color: #0bb6a2
+                color: #fff
+            td.today
+              background-color: #c55a5a
+              color: (#fff!important)
+              border: 1px solid #c55a5a
+              &:hover
+                border: 1px solid #c55a5a
+                background-color: #d14343
+            td
+              &:nth-child(n+6)
+                color: rgb(231, 140, 92)
+                &:hover
+                  color: #fff
+    .calendar-additional
+      max-width: 30%
+      width: 100%
+      min-width: 200px
+      height: auto
+      margin: 0px 5px
+      .calendar-events
+        background-color: #fff
+        border: 1px solid #e7e7e7
+        margin: 5px
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        position: relative
+        .add-date
+          position: absolute
+          top: 5px
+          right: 5px
+          font-size: 18px
+          color: #8b8b8b
+          background-color: transparent
+          outline: none
+          border: none
+          &:hover
+            color: #4daca0
+            cursor: pointer
+        .chosen-date
+          background-color: #e9edf3
+          color: #8a929d
+          font-weight: 500
+          font-style: italic
+          font-size: 14px
+          display: block
+          width: 170px
+          text-align: center
+          padding: 5px 10px
+          font-family: Roboto-Medium, sans-serif
+          margin: 5px auto
+      .added-events
+        border: 1px solid #e7e7e7
+        height: 300px
+        margin: 5px
+        background-color: #fff
+        padding: 5px
+        overflow: auto
+        height: 60vh
+        &::-webkit-scrollbar-track
+          border-radius: 2px
+        &::-webkit-scrollbar
+          width: 4px
+        &::-webkit-scrollbar-thumb
+          border-radius: 4px
+          background: #f0f2f5
+        &:hover::-webkit-scrollbar-thumb
+          background: #19b8a5
+        .added-new-event
+          margin: 5px auto
+          border: 1px solid #e7e7e7
+          padding: 5px
+          a
+            color: #31b9ff
+            font-weight: 500
+            font-size: 16px
+            font-family: Roboto-Bold, sans-serif
+            text-decoration: none
+            word-wrap: wrap
+            &:hover
+              text-decoration: underline
+          p
+            margin: 9px 0px
+            font-family: Roboto-Medium, sans-serif
+            font-size: 14px
+            color: #686868
+            word-wrap: wrap
+          span
+            color: #acacac
+            font-size: 14px
+            font-family: Roboto-Regular, sans-serif
+//---------------------------------------------//
+//----------  Конец главной страницы ----------//
+//---------------------------------------------//
+//-------Начало страницы "Настройки"-----------//
+//---------------------------------------------//
+.content-settings
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: stretch
+  flex-wrap: nowrap
+  //height: auto
+  min-height: calc(100vh - 75px)
+  height: 100%
+  .left-panel-settings
+    width: 250px
+    min-width: 250px
+    border-right: 1px solid #e7e7e7
+    border-bottom: 1px solid #e7e7e7
+    background-color: #fff
+    padding: 20px 0
+    display: block
+    ul
+      list-style-type: none
+      padding: 0
+      margin: 0
+      li
+        color: #6b747b
+        padding: 10px 30px
+        font-weight: 500
+        display: block
+        font-size: 15px
+        cursor: pointer
+        text-decoration: none
+        font-family: Roboto-Bold
+        text-align: left
+        border-left: 3px solid transparent
+        i
+          color: #31b9ff
+          margin-right: 10px
+          width: 15px
+          text-align: center
+        &:hover
+          color: #31b9ff
+          border-left: 3px solid #31b9ff
+          i
+            color: #6b747b
+  .settings-flex
+    width: 100%
+    height: auto
+    padding: 20px
+    display: inline-flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    form
+      display: none
+    .settingsForm-active
+      display: (block!important)
+      width: 100%
+      .settings-panel
+        width: 100%
+        border-radius: 0px
+        color: #5c5c5c
+        margin-bottom: 20px
+        background-color: #fff
+        border: 1px solid #e7e7e7
+        box-shadow: 0 1px 1px rgba(0,0,0,0.05)
+        .settings-panel-header
+          color: #8b8b8b
+          padding: 5px 24px
+          background-color: #f4f5f8
+          border-bottom: 1px solid #e7e7e7
+          p
+            font-family: Roboto-Medium, sans-serif
+            font-size: 14px
+        .settings-panel-body
+          padding: 0px 20px 20px 20px
+          .form-group
+            border-bottom: 1px solid #e7e7e7
+            padding-bottom: 15px
+            padding-top: 15px
+            padding-left: 5px
+            padding-right: 20px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            flex-wrap: wrap
+            .form-group-label
+              width: 25%
+              color: #828282
+              font-family: Roboto-Bold, sans-serif
+              font-size: 14px
+            .input-group
+              width: 75%
+              color: #5c5c5c
+              display: table
+              position: relative
+              border-collapse: separate
+              .input-group-addon
+                padding: 6px 12px
+                font-size: 14px
+                font-weight: normal
+                line-height: 1
+                color: #555
+                font-family: Roboto-Light, sans-serif
+                text-align: center
+                background-color: #eee
+                border: 1px solid #ccc
+                border-radius: 0
+                display: table-cell
+                width: 140px
+                vertical-align: middle
+                border-right: none
+              .form-control
+                height: 40px
+                position: relative
+                z-index: 2
+                float: left
+                width: 100%
+                margin-bottom: 0
+                display: table-cell
+                outline: none
+                font-size: 14px
+                font-family: Roboto-Light, sans-serif
+                border: 1px solid #ccc
+                padding-left: 10px
+                padding-right: 10px
+                &:focus
+                  border: 1px solid #4daca0
+                  .input-group-addon
+                    border: 1px solid #4daca0
+                    border-right: none
+              .alert
+                height: 40px
+                position: relative
+                float: left
+                width: 100%
+                margin-bottom: 0
+                display: table-cell
+                outline: none
+                font-size: 14px
+                font-family: Roboto-Light, sans-serif
+                padding-left: 10px
+                padding-right: 10px
+                display: flex
+                align-items: center
+                span
+                  margin-right: 10px
+              .alert-success
+                border: 1px solid #a2cac6
+                background-color: #c3e7e3
+                color: #1a887b
+              .alert-non-success
+                border: 1px solid #d14343
+                background: #c55a5a
+                color: #fff
+//---------------------------------------------//
+//------- Media Query -------------------------//
+//---------------------------------------------//
+@media only screen and (max-width: 1100px)
+  .header
+    flex-wrap: wrap
+    height: auto
+    .logo
+      height: 75px
+    .navbar-left
+      max-width: 100vw
+      width: 100%
+      order: 2
+      margin-left: auto
+      margin-right: auto
+      display: flex
+      border-top: 1px solid #e7e7e7
+      flex-direction: row
+      justify-content: space-around
+      align-items: center
+      .navbar-left-item
+        padding: 10px 10px
+        border: none
+        &:hover
+          border: none
+          background-color: transparent
+    .navbar-right
+      .user
+        margin-right: 0px
+        .user-description
+          height: 75px
+      .additional-menu
+        height: auto
+@media only screen and (max-width: 992px)
+  .left-panel
+    width: calc(100% - 40px)
+    margin: 20px 20px 0
+    border: 1px solid #e7e7e7
+  .content
+    .main-calendar
+      height: auto
+      flex-wrap: wrap
+      .calendar
+        max-width: 100%
+      .calendar-additional
+        max-width: 100%
+@media only screen and (max-width: 768px)
+  .content
+    flex-wrap: wrap
+    .main-calendar
+      max-width: calc(100% - 30px)
+      width: 100%
+      margin: 20px auto 0
+      .calendar-additional
+        margin: 0
+  .content-settings
+    flex-wrap: wrap
+    .left-panel-settings
+      width: 100%
+      ul
+        li
+          text-align: center
+    .settings-flex
+      .settingsForm-active
+        .settings-panel
+          .settings-panel-body
+            .form-group
+              padding-left: 0px
+              .form-group-label
+                width: 100%
+                text-align: center
+                margin-bottom: 10px
+              .input-group
+                width: 100%
+                .input-group-addon
+                  padding: 6px 0px
+                  width: 125px
+@media only screen and (max-width: 568px)
+  .header
+    .logo
+      max-width: 100vw
+      width: 95vw
+      margin-left: auto
+      margin-right: auto
+      order: 3
+      border: none
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      flex-wrap: nowrap
+      .hamburger
+        margin-right: 15px
+        //transition: all 0.1s ease-in 0s
+        display: flex
+        &:hover
+          cursor: pointer
+      .hamburger-active
+        .line_1
+          transform: rotate(-33deg)
+          transform-origin: right
+        .line_2
+          opacity: 0
+        .line_3
+          transform: rotate(33deg)
+          transform-origin: right
+    .navbar-left
+      order: 4
+      flex-direction: column
+      justify-content: flex-start
+      display: none
+      .navbar-left-item
+        width: 100%
+    .navbar-right
+      display: flex
+      flex-direction: row
+      justify-content: flex-end
+      width: 100vw
+      .user
+        .user-description
+          border: none

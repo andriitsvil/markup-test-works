@@ -1,0 +1,1209 @@
+@font-face
+    font-family: GothamPro-Bold
+    src: url('../fonts/GothamPro-Bold.eot')
+    src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype')
+    src: url('../fonts/GothamPro-Bold.ttf') format('truetype')
+    src: url('../fonts/GothamPro-Bold.woff')  format('woff')
+    src: url('../fonts/GothamPro-Bold.otf')  format('opentype')
+    font-weight: bold
+    font-style: normal
+@font-face
+    font-family: GothamPro-Medium
+    src: url('../fonts/GothamPro-Medium.eot')
+    src: url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype')
+    src: url('../fonts/GothamPro-Medium.ttf') format('truetype')
+    src: url('../fonts/GothamPro-Medium.woff')  format('woff')
+    src: url('../fonts/GothamPro-Medium.otf')  format('opentype')
+    font-weight: normal
+    font-style: normal
+@font-face
+    font-family: GothamPro
+    src: url('../fonts/GothamPro.eot')
+    src: url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype')
+    src: url('../fonts/GothamPro.ttf') format('truetype')
+    src: url('../fonts/GothamPro.woff')  format('woff')
+    src: url('../fonts/GothamPro.otf')  format('opentype')
+    font-weight: normal
+    font-style: normal
+html,body 
+    margin: 0
+    padding: 0
+    overflow-x: hidden
+.header
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    align-content: center
+    text-align: center
+    max-width: 1140px
+    margin: 35px auto
+    overflow-y: visible
+    .header_logo
+        width: 320px
+        height: 110px
+        background-image: url('../img/logo_shape.png')
+        background-repeat: no-repeat
+        background-position: 0px center
+    .header_sales
+        max-width: 375px
+        min-width: 320px
+        height: 110px
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
+        img
+            margin-right: 30px
+        .header_sales_text_first
+            font-size: 21px
+            font-family: GothamPro,sans-serif
+            color: #9e9e9e
+            text-align: left
+        .header_sales_text_second
+            color: #182a38
+            font-family: GothamPro-Bold,sans-serif
+            font-size: 31px
+            font-weight: bold
+    .header_kd    
+        width: 320px
+        height: 110px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        text-align: center
+        .header_kd_first
+            font-size: 21px
+            font-family: GothamPro,sans-serif
+            color: #9e9e9e
+            text-align: left
+        .header_kd_second
+            color: #182a38
+            font-family: GothamPro-Bold,sans-serif
+            font-size: 31px
+            font-weight: bold
+    .vertical_line
+        width: 1px
+        height: 53px
+        background-color: #c1c1c1
+
+.site_caption
+    background-image: url('../img/first_bg.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center 46px
+    width: 100%
+    height: 750px
+    overflow-y: visible
+    nav
+        max-width: 1140px
+        margin: 0px auto 0px auto
+        background-color: #08116d
+        height: 90px
+        z-index: 3
+        border: none
+        border-radius: 0px
+        padding: 20px 0px
+        .navbar-toggle
+            border-color: transparent
+            &:hover
+                background-color: transparent
+            &:focus
+                background-color: transparent
+        .navbar-nav
+            margin: 0px -15px
+        ul
+            list-style-type: none
+            background-color: #08116d
+            li
+                padding: 0 15px
+                background-color: #08116d
+                display: flex
+                a
+                    color: #a4a8d0
+                    font-family: GothamPro-Medium,sans-serif
+                    font-size: 18px
+                    padding-left: 3px
+                    padding-right: 3px
+                    &:hover
+                        color: #fff
+                        text-decoration: none
+                    &:active
+                        color: #fff
+                        text-decoration: none
+                    &:focus
+                        color: #fff
+                        text-decoration: none
+        .container-fluid
+            .navbar-collapse
+                border-color: transparent
+                .navbar-right
+                    li
+                        a
+                            display: flex
+                            flex-direction: row
+                            justify-content: center
+                            align-items: center
+                            color: #a4a8d0
+                            font-family: GothamPro-Medium,sans-serif
+                            font-size: 18px
+                            width: 10px
+                            height: 10px
+                            padding: 25px 10px
+                            background-color: transparent
+                            &:hover
+                                color: #fff
+                                text-decoration: none
+                            &:active
+                                color: #fff
+                                text-decoration: none
+                            &:focus
+                                color: #fff
+                                text-decoration: none
+            
+    .site_caption_text
+        max-width: 1140px
+        margin: 10px auto
+        height: 580px
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: flex-start
+        h1
+            font-family: GothamPro-Bold
+            color: #fff
+            font-size: 56px
+            font-weight: bold
+            margin-left: 15px
+.proposals
+    max-width: 1140px
+    margin: -120px auto 80px auto
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    align-content: center
+    .proposal_block
+        width: 360px
+        min-width: 300px
+        height: 220px
+        margin: 10px auto
+        display: block
+        background-position: center center
+        background-size: cover
+        background-repeat: no-repeat
+        &:hover
+            background-image: none
+            background-color: #333333
+            cursor: pointer
+        .proposal_block_flex
+            width: 112px
+            height: 190px
+            margin-left: 40px
+            margin-bottom: 30px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: flex-start
+            .proposal_green
+                display: block
+                width: 75px
+                height: 60px
+                background-color: #47c65f
+                background-repeat: no-repeat
+                background-position: center center
+            h2
+                font-family: GothamPro-Medium,sans-serif
+                color: #fff
+                font-size: 22px
+            .proposal_link
+                color: #47c65f
+                text-decoration: none
+                font-family: GothamPro,sans-serif
+                font-size: 16px
+            .green_first
+                background-image: url('../img/proposal_1_m.png')
+            .green_second
+                background-image: url('../img/proposal_2_m.png')
+            .green_third
+                background-image: url('../img/proposal_3_m.png')
+            .green_fourth
+                background-image: url('../img/proposal_4_m.png')
+            .green_fifth
+                background-image: url('../img/proposal_5_m.png')
+            .green_sixth
+                background-image: url('../img/proposal_6_m.png')
+    .first
+        background-image: url('../img/proposal_1.png')
+    .second
+        background-image: url('../img/proposal_4.png')
+    .third
+        background-image: url('../img/proposal_3.png')
+    .fourth
+        background-image: url('../img/proposal_4.png')
+    .fifth
+        background-image: url('../img/proposal_5.png')
+    .sixth
+        background-image: url('../img/proposal_6.png')
+.advantages
+    width: 100%
+    background-image: url('../img/bg_2.png')
+    padding-top: 80px
+    padding-bottom: 65px
+    .advantages_flex
+        max-width: 1140px
+        margin: 0px auto 0px auto
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+        flex-wrap: wrap
+        align-content: center
+        .advantages_description
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: flex-start
+            max-width: 480px
+            //margin-right: 15px
+            h2
+                color: #333
+                font-family: GothamPro-Medium,sans-serif
+                font-size: 36px
+                margin: 0px 0px 0px 0px
+            .adv_11
+                background-image: url('../img/adv_1.png')
+                width: 250px
+                height: 6px
+                display: (block!important)
+                background-repeat: no-repeat
+                background-position: center center
+                margin: 30px 0px 15px 0px
+            p
+                font-family: GothamPro,sans-serif
+                font-size: 16px
+                color: #7d7d7d
+                margin: 25px 0px 0px 0px 
+        .advantages_grid
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            align-content: center
+            flex-wrap: wrap
+            width: 560px
+            height: auto
+            margin: 0 10px
+            overflow: hidden
+            .ad1
+                width: 265px
+                height: 70px
+                display: flex
+                flex-direction: row
+                justify-content: flex-start
+                align-items: center
+                background-color: #fff
+                margin: 0px 0px 35px 0px
+                .ad_span
+                    height: 100%
+                    width: 2px
+                img
+                    margin: 10px
+                h3
+                    font-family: GothamPro,sans-serif
+                    font-size: 16px
+                    margin-left: 25px
+                    color: #333
+                .ad_span_1,.ad_span_2
+                    background-color: #2b3bdf
+                .ad_span_3, .ad_span_4
+                    background-color: #fbd532
+                .ad_span_5, .ad_span_6
+                    background-color: #46c6ad
+    .partners
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        align-content: center
+        max-width: 1140px
+        margin: 50px auto 0px auto
+.about
+    width: 100%
+    background-color: #08116d
+    margin: 0
+    padding: 0
+    .row
+        margin: 0 auto
+        max-height: 700px
+        min-height: 480px
+        .about_img
+            margin: 0
+            padding: 0
+            overflow: hidden
+            max-width: 1280px
+            min-width: 320px
+            max-height: 700px
+            min-height: 480px
+            background-image: url('../img/Layer5.png')
+            background-size: cover
+            background-position: center center
+            background-repeat: no-repeat
+        .about_text
+            padding: 10px 25px 10px 25px
+            h2
+                font-family: GothamPro-Medium,sans-serif
+                color: #fff
+                font-size: 36px
+            img
+                margin-bottom: 45px
+                margin-top: 30px
+            p
+                color: #fff
+                font-family: GothamPro,sans-serif
+                font-size: 16px
+        .about_img
+            margin: 0
+            padding: 0
+.about_prod
+    margin-bottom: 30px
+    .about_prod_flex
+        margin: 30px auto 10px auto
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+        flex-wrap: wrap
+        align-content: center
+        max-width: 1160px
+        .first_row
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            align-items: center
+            border: 1px solid #e8e8e8
+            max-width: 480px
+            min-width: 320px
+            .first_row_block_1,.first_row_block_2
+                border-bottom: 1px solid #e8e8e8
+                padding: 50px 40px 40px 40px
+                text-align: left
+                width: 470px
+                margin: 0 auto
+                h3
+                    font-family: GothamPro-Medium,sans-serif
+                    color: #333
+                    font-size: 24px
+                    text-align: left
+                    margin: 0 0 0 25px
+                ul
+                    list-style-image: url('../img/dot.png')
+                    li
+                        color: #7d7d7d
+                        font-family: GothamPro,sans-serif
+                        font-size: 16px
+                        margin: 10px 0px
+            .info
+                display: block
+                color: #47c65f
+                width: 100%
+                padding: 15px 0 15px 45px
+                font-family: GothamPro-Medium,sans-serif
+                text-decoration: none
+                font-size: 16px
+                vertical-align: middle
+                &:hover
+                    background-color: #47c65f
+                    color: #fff
+        .second_row
+            max-width: 580px 
+            figure
+                min-width: 320px
+                figcaption
+                    margin: 15px auto 30px auto
+                    min-width: 320px
+                    text-align: center
+                    font-family: GothamPro,sans-serif
+                    font-size: 16px
+                    color: #7d7d7d
+.leadership
+    max-width: 1160px
+    height: auto
+    margin: 50px auto 80px auto
+    background-color: #fff
+    overflow-x: visible
+    .leadership_header
+        //margin: 10px auto
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+        flex-wrap: wrap
+        align-content: center
+        h2
+            font-family: GothamPro-Medium,sans-serif
+            font-size: 36px
+            color: #333
+            margin: 0px 0px 40px 0
+        img
+            width: 235px
+            margin: 0 0px 60px 0
+        .leadership_nav
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            float: left
+            .left,.right
+                background-color: #dedede
+                color: #fff
+                width: 65px
+                height: 50px
+                display: flex
+                flex-direction: row
+                justify-content: center
+                align-items: center
+                margin-left: 15px
+                font-size: 30px
+                font-family: GothamPro-Bold,sans-serif
+                cursor: pointer
+                &:hover
+                    background-color: #47c65f
+    .leadership_slider
+        margin: 10px auto 10px auto
+        max-width: 1140px
+        height: auto
+        .item
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: flex-start
+            max-width: 360px
+            min-width: 300px
+            margin-left: (auto!important)
+            margin-right: (auto!important)
+            figcaption
+                font-family: GothamPro-Bold,sans-serif
+                font-weight: bold
+                font-size: 20px
+                color: #2c3948
+                margin: 10px 0px
+            p
+                font-size: 14px
+                font-family: GothamPro,sans-serif
+                color: #989898
+                margin: 5px 0px
+            .leader_phone
+                color: #2b3bdf
+                font-size: 16px
+                font-family: GothamPro,sans-serif
+                margin: 5px 0px
+.videos
+    width: 100%
+    height: auto
+    padding: 0
+    margin: 0 auto
+    .first_row
+        width: 100%
+        margin: 0 auto
+        .video_1
+            background-image: url('../img/video_1.png')
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: cover
+            height: 430px
+            margin: 0px
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            position: relative
+            border: 2px solid #fff
+            .play
+                width: 265px
+                height: 60px
+                border-radius: 5px
+                background-color: #47c65f
+                display: none
+                flex-direction: row
+                justify-content: space-around
+                align-items: center
+                cursor: pointer
+                z-index: 6
+                p
+                    font-family: GothamPro-Medium,sans-serif
+                    font-size: 16px
+                    color: #fff
+                    margin: 0
+                    i
+                        margin: 0 20px
+            &:hover
+                .play
+                    display: flex
+                .overlay
+                    display: block
+            .overlay
+                position: absolute
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+                display: none
+                background: rgba(0, 0, 0, 0.6)
+        .technologies
+            background-color: #08116d
+            color: #fff
+            height: 430px
+            margin: 0px
+            padding-left: 80px
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            align-items: flex-start
+            border: 2px solid #fff
+            h1
+                font-size: 60px
+                font-family: GothamPro-Medium,sans-serif
+                margin-top: 50px
+            p
+                font-size: 16px
+                font-family: GothamPro,sans-serif
+.videos_2
+    width: 100%
+    height: auto
+    margin: 0px auto -7px auto
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    position: relative
+    flex-wrap: nowrap
+    padding-left: 0px
+    padding-right: 0px
+    .iv
+        border: 2px solid #fff
+        max-width: 480px
+        min-width: 320px
+        max-height: 435px
+        min-height: 290px
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        position: relative
+        &:hover
+            cursor: pointer
+            .overlay_2
+                display: block
+            .outer
+                display: flex
+        .outer
+            display: none
+            flex-direction: column
+            justify-content: space-around
+            align-items: center
+            z-index: 6
+            width: 100%
+            height: 140px
+            h4
+                font-family: GothamPro-Medium,sans-serif
+                font-size: 24px
+                color: #fff
+                margin-bottom: 10px
+            .rounded_play
+                border-radius: 50%
+                background-color: #47c65f
+                width: 90px
+                height: 90px
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                p
+                    font-family: GothamPro,sans-serif
+                    color: #fff
+                    font-size: 26px
+                    font-weight: 100
+                    margin: 0
+        .overlay_2
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            display: none
+            background: rgba(0, 0, 0, 0.6)
+    .item_video_1
+        background-image: url('../img/video_2.png')
+    .item_video_2
+        background-image: url('../img/video_3.png')
+    .item_video_3
+        background-image: url('../img/video_4.png')
+    .item_video_4
+        background-image: url('../img/video_5.png')
+    .slide_two_prev,.slide_two_next
+        background-color: #47c65f
+        position: absolute
+        top: 45%
+        width: 65px
+        height: 65px
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        color: #fff
+        font-size: 30px
+        font-family: GothamPro-Medium,sans-serif
+        cursor: pointer
+        z-index: 20
+        &:hover
+            color: #dfbf20
+    .slide_two_prev
+        position: absolute
+        top: 45%
+        left: 0
+    .slide_two_next
+        top: 45%
+        right: 0
+.objects
+    max-width: 100%
+    height: auto
+    background-image: url('../img/bg_3.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    padding-top: 75px
+    padding-bottom: 80px
+    .objects_header
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        width: 275px
+        margin: 10px auto 20px auto
+        h2
+            text-align: center
+            font-size: 36px
+            font-family: GothamPro-Medium,sans-serif
+            color: #333
+            margin: 0 auto
+        img
+            margin-top: 40px
+            margin-bottom: 55px
+    .slider_outer
+        max-width: 1300px
+        margin: 10px auto
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        flex-wrap: nowrap
+        .slider_outer_prev,.slider_outer_next
+            width: 65px
+            height: 65px
+            background-color: #fff
+            color: #000
+            font-size: 30px
+            font-family: GothamPro-Bold,sans-serif
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            cursor: pointer
+            &:hover
+                background-color: #47c65f
+                color: #fff
+        .slide_three
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            align-items: center
+            margin: 20px auto
+            max-width: 1100px
+            min-width: 265px
+            .obj
+                background-color: #fff
+                max-width: 265px
+                margin: 0 auto
+                padding-bottom: 5px
+                h4
+                    margin: 15px 15px
+                    font-size: 20px
+                    font-family: GothamPro-Bold,sans-serif
+                    color: #2c3948
+                p
+                    font-family: GothamPro,sans-serif
+                    font-size: 13px
+                    color: #8d8d8d
+                    margin: 10px 15px 10px 15px
+                .bg_obj
+                    width: 100%
+                    height: 200px
+                    background-size: cover
+                    background-repeat: no-repeat
+                    position: relative
+                    &:hover
+                        .overlay_3
+                            display: flex
+                            cursor: pointer
+                    .overlay_3
+                        position: absolute
+                        top: 0
+                        right: 0
+                        left: 0
+                        bottom: 0
+                        display: none
+                        flex-direction: row
+                        justify-content: center
+                        align-items: center
+                        background: rgba(0, 0, 0, 0.6)
+                        color: #fff
+                        .srch
+                            background-image: url('../img/search_item.png')
+                            background-repeat: no-repeat
+                            width: 50px
+                            height: 50px
+                            background-position: center center
+                            background-size: contain
+                .bg_obj_1
+                    background-image: url('../img/obj_1.png')
+                .bg_obj_2
+                    background-image: url('../img/obj_2.png')
+                .bg_obj_3
+                    background-image: url('../img/obj_3.png')
+                .bg_obj_4
+                    background-image: url('../img/obj_4.png')
+.career
+    max-width: 1140px
+    height: auto
+    margin: 35px auto
+    .career_header
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: flex-start
+        margin: 20px 0px
+        h2
+            font-size: 36px
+            font-family: GothamPro-Medium,sans-serif
+            color: #333
+    .career_flex
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        max-width: 1000px
+        .career_flex_item
+            margin: 15px 0
+            width: 260px
+            height: 130px
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            align-items: flex-start
+            .career_text
+                display: flex
+                flex-direction: column
+                justify-content: space-around
+                align-items: center
+                h4
+                    font-size: 24px
+                    font-family: GothamPro-Medium,sans-serif
+                    color: #333
+                ul
+                    list-style-image: url('../img/dot.png')
+                    li
+                        font-size: 14px
+                        font-family: GothamPro,sans-serif
+                        color: #999
+.comments
+    max-width: 1140px
+    height: auto
+    margin: 50px auto 10px auto
+    background-color: #fff
+    .comments_header
+        margin: 10px 0 30px 0
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+        flex-wrap: wrap
+        align-content: center
+        h2
+            font-family: GothamPro-Medium,sans-serif
+            font-size: 36px
+            color: #333
+            margin: 10px 0px
+        img
+            width: 235px
+            margin: 0 0px
+        .comments_nav
+            display: flex
+            flex-direction: row
+            float: left
+            .comments_owl-prev,.comments_owl-next
+                background-color: #dedede
+                color: #fff
+                width: 65px
+                height: 50px
+                display: flex
+                flex-direction: row
+                justify-content: center
+                align-items: center
+                margin-left: 35px
+                font-size: 30px
+                font-family: GothamPro-Bold,sans-serif
+                cursor: pointer
+                &:hover
+                    background-color: #47c65f
+    .comments_slider
+        margin: 10px auto 10px auto
+        max-width: 1140px
+        height: 400px
+        .com
+            border: 2px solid #c1c1c1
+            max-width: 360px
+            min-width: 300px
+            margin: 60px auto 10px auto
+            height: 285px
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: center
+            overflow: visible
+            .comment_round
+                border-radius: 50%
+                margin-top: -60px
+            .comment_round_2
+                border: 2px solid #c1c1c1
+                width: 113px
+                height: 113px
+                background-color: #fff
+                background-image: url('../img/comment_2.png')
+                background-repeat: no-repeat
+                background-size: contain
+                background-position: 15px 22px
+            p
+                font-family: GothamPro,sans-serif
+                font-style: italic
+                font-size: 18px
+                color: #333
+                margin: 10px auto
+                width: 255px
+                text-align: center
+            h5
+                font-size: 18px
+                font-family: GothamPro-Medium,sans-serif
+                color: #2c3948
+.button_bg_4
+    width: 100%
+    height: auto
+    background-image: url('../img/bg_4.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    padding-bottom: 80px
+    padding-top: 50px
+    .btn_flex
+        display: flex
+        flex-direction: row
+        max-width: 1140px
+        margin: 0 auto
+        height: auto
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        align-content: center
+        button
+            color: #3a913c
+            font-family: GothamPro-Bold,sans-serif
+            font-size: 18px
+            background-color: #fff
+            padding: 25px 75px
+            border-radius: 10px
+            margin: 5px
+        .flex_text_btn
+            padding-bottom: 20px
+            h4
+                font-size: 36px
+                font-family: GothamPro-Medium,sans-serif
+                color: #fff
+                margin: 5px
+            p
+                font-size: 16px
+                font-family: GothamPro,sans-serif
+                color: #fff
+                margin: 5px
+.layout
+    width: 100%
+    height: 860px
+    background-image: url('../img/bg_5.png')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    overflow-y: visible
+    .layout_center
+        max-width: 1140px
+        min-width: 320px
+        height: 100%
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-items: center
+        background-color: transparent
+        margin: -30px auto 0 auto
+        overflow-y: visible
+        .layout_contacts
+            height: 935px
+            max-width: 460px
+            min-width: 300px
+            background-color: #08116d
+            margin: 0 10px 0 0px
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: flex-start
+            padding-bottom: 50px
+            padding-top: 30px
+            padding-right: 105px
+            .paragraph_img
+                display: flex
+                flex-direction: row
+                justify-content: space-around
+                align-items: center
+                margin-left: 45px
+                margin-top: 0px
+                margin-right: 0px
+                margin-bottom: 0px
+                p
+                    margin: 0px 0px 0px 15px
+            .flex-start
+                align-items: flex-start
+                p
+                    margin: 0 15px
+            h5
+                margin: 65px 15px 5px 45px
+                color: #fff
+                font-size: 18px
+                font-family: GothamPro-Medium,sans-serif
+            hr
+                color: #39418a
+                width: 100%
+                margin: 0 auto 0 45px
+                height: 1px
+            p
+                margin: 5px 15px
+                color: #fff
+                font-family: GothamPro,sans-serif
+                font-size: 14px
+                font-weight: 100
+                vertical-align: middle
+                img
+                    margin-right: 5px
+                .fa-window-close
+                    color: transparent
+.finish
+    width: 100%
+    height: auto
+    background-image: url('../img/bg_7.png')
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    padding-top: 110px
+    padding-bottom: 70px
+    h2
+        font-size: 30px
+        font-family: GothamPro-Medium,sans-serif
+        color: #fcfcfc
+        text-transform: uppercase
+        text-align: center
+        margin: 15px auto
+    a
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        background-color: #47c65f
+        text-decoration: none
+        color: #fff
+        font-size: 18px
+        font-family: GothamPro-Bold,sans-serif
+        width: 265px
+        height: 70px
+        border-radius: 10px
+        margin: 15px auto
+        &:hover
+            color: #47c65f
+            background-color: #fff
+footer
+    width: 100%
+    height: auto
+    .footer_cop
+        max-width: 1140px
+        margin: 0 auto
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        align-content: center
+        padding: 15px 5px
+        h4
+            text-align: center
+            font-family: GothamPro,sans-serif
+            font-size: 13px
+            color: #878787
+        .footer_flex
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            align-items: center
+            flex-wrap: wrap
+            align-content: center
+            a
+                text-decoration: none
+                font-family: GothamPro,sans-serif
+                font-size: 13px
+                color: #878787
+                margin: 0px 10px
+                border-bottom: 2px solid transparent
+                &:hover
+                    border-bottom: 2px solid #3a913c
+.cumf_bt_form_wrapper,.cbalink
+    display: (none!important)
+@media (max-width: 1025px)
+    .layout_contacts
+        margin-left: (auto !important)
+        margin-right: (auto !important)
+    .videos
+        .first_row
+            .technologies
+                h1
+                    font-size: (50px!important)
+    .vertical_line
+        display: (none!important)
+    .about_text
+        padding-left: (20px!important)
+    .first_row_block_1,.first_row_block_2
+        padding-left: (0px!important)
+        padding-right: (0px!important)
+        li
+            font-size: (14px!important)
+    .footer_cop
+        h4
+            margin: 10px auto
+    .header_logo,.header_kd,.header_sales,.advantages_grid
+        margin-left: (auto!important)
+        margin-right: (auto!important)
+        margin-top: (15px!important)
+        text-align: (center!important)
+        align-items: (center!important)
+    .partners
+        img  
+            margin-left: (auto!important)
+            margin-right: (auto!important)
+            margin-top: (10px!important)
+    .info
+        padding-left: (10px!important)
+        padding-right: (10px!important)
+    .site_caption_text
+        h1
+            font-size: (34px!important)
+            text-align: (center!important)
+            margin-left: (auto!important)
+            margin-right: (auto!important)
+    .technologies
+        padding-left: (20px!important)
+    button,.ad1,.header_sales_text,.first_row,.second_row,.leadership_slider,.item,.leadership_caption,.owl-controls
+        margin-left: (auto!important)
+        margin-right: (auto!important)
+    .site_menu
+        font-size: (14px!important)
+    .about_img
+        height: (680px!important)
+    .advantages_description
+        margin-left: (auto!important)
+        margin-right: (auto!important)
+        padding-left: (5px!important)
+        padding-right: (5px!important)
+        h2
+           text-align: (center!important)
+    .advantages
+        padding-top: (8px!important)
+        padding-bottom: (8px!important)
+    .partners
+        margin-top: (5px!important)
+    .proposals
+        margin-bottom: (10px!important)
+    .left,.right
+        margin: (15px!important)
+    .leadership_caption
+        img,h2
+            margin-bottom: (10px!important)
+    .leadership,hr,comments
+        margin-bottom: (10px!important)
+        margin-top: (10px!important)
+    .objects
+        padding-top: (15px!important)
+        padding-bottom: (15px!important)
+        img
+            margin-bottom: (10px!important)
+            margin-top: (10px!important)
+    .career
+        margin-top: (10px!important)
+        margin-bottom: (10px!important)
+        .career_header
+            margin-top: (5px!important)
+            margin-bottom: (5px!important)
+            h2 
+                margin-top: (5px!important)
+                margin-bottom: (5px!important) 
+                margin-left: (auto!important)
+                margin-right: (auto!important)
+            img 
+                margin-left: (auto!important)
+                margin-right: (auto!important)
+    .career_flex_item
+        margin-left: (auto!important)
+        margin-right: (auto!important)
+    .comments
+        .comments_caption
+            margin-left: (auto!important)
+            margin-right: (auto!important)
+            margin-bottom: (10px!important)
+            img
+                margin-left: (10px!important)
+                margin-right: (auto!important)
+            h2
+                margin-left: (auto!important)
+                margin-right: (auto!important)
+                margin-top: (0px!important)
+                margin-bottom: (0px!important)
+                text-align: (center!important)
+@media (max-width: 767px)
+    .about_img
+        height: (480px!important)
+    .navbar-right,.navbar-nav
+        li
+            &:hover
+                background-color: (#40d039!important)
+            a
+                color: (#fff!important)
+                width: (100%!important)
+                &:hover
+                    color: (#fff!important)
+@media (min-width: 1440px)        
+    .item_video_1,.item_video_2,.item_video_3,.item_video_4
+        height: (435px!important)

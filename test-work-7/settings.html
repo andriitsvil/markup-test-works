@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="CRM"/>
+  <meta name="robots" content="all"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#19b8a5">
+  <title>CRM Clinic - Settings</title>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<!--Начало шапки -->
+<header class="header">
+  <div class="logo">
+    <a href="index.html" class="logo-image">
+      <img src="img/logo.png" alt="CRM Logo" title="Главная">
+    </a>
+    <div class="hamburger">
+      <span class="line line_1"></span>
+      <span class="line line_2"></span>
+      <span class="line line_3"></span>
+    </div>
+  </div>
+  <nav class="navbar-left">
+    <a href="#" class="navbar-left-item">
+      <i class="fa fa-cog" aria-hidden="true"></i>
+      <span>Настройки</span>
+    </a>
+    <a href="#" class="navbar-left-item">
+      <i class="fa fa-briefcase" aria-hidden="true"></i>
+      <span>Группы</span>
+    </a>
+    <a href="#" class="navbar-left-item">
+      <i class="fa fa-user" aria-hidden="true"></i>
+      <span>Пользователи</span>
+    </a>
+    <a href="#" class="navbar-left-item">
+      <i class="fa fa-th-large" aria-hidden="true"></i>
+      <span>Услуги</span>
+    </a>
+    <a href="#" class="navbar-left-item">
+      <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+      <span>Счета</span>
+    </a>
+    <a href="#" class="navbar-left-item">
+      <i class="fa fa-external-link" aria-hidden="true"></i>
+      <span>Сайт</span>
+    </a>
+  </nav>
+  <nav class="navbar-right">
+    <div class="user">
+      <div class="user-description">
+        <p>Вася Пупкин</p>
+        <span>Владелец</span>
+      </div>
+      <img src="img/user-avatar.png" alt="user">
+    </div>
+    <div class="additional-menu">
+      <a href="#" class="additional-menu-item">
+        <i class="fa fa-external-link" aria-hidden="true"></i>
+        <span>Сайт</span>
+      </a>
+      <a href="#" class="additional-menu-item">
+        <i class="fa fa-sign-out" aria-hidden="true"></i>
+        <span>Выйти</span>
+      </a>
+    </div>
+  </nav>
+</header>
+<!--Конец шапки -->
+<div class="content-settings">
+<!--начало левой боковой панели -->
+<aside class="left-panel-settings">
+  <ul>
+    <li class="setup-1"><i class="fa fa-cog" aria-hidden="true"></i> Основные</li>
+    <li class="setup-2"><i class="fa fa-lock" aria-hidden="true"></i> Привелегии</li>
+    <li class="setup-3"><i class="fa fa-comment" aria-hidden="true"></i> SMS конфиг</li>
+    <li class="setup-4"><i class="fa fa-id-card" aria-hidden="true"></i> SMS формы</li>
+    <li class="setup-5"><i class="fa fa-flag" aria-hidden="true"></i> Языки</li>
+  </ul>
+</aside>
+<!--Конец левой боковой панели -->
+<!--Вставка нового контента -->
+<section class="settings-flex">
+  <form action="" method="post" id="settingsForm-1" class="settingsForm-active">
+    <div class="settings-panel">
+      <div class="settings-panel-header">
+        <p>Настройки</p>
+      </div>
+      <div class="settings-panel-body">
+        <div class="form-group">
+          <label class="form-group-label">
+            Адрес админ панели
+          </label>
+          <div class="input-group">
+            <span class="input-group-addon">
+              lr-service.com.ua/
+            </span>
+            <input type="text" class="form-control" placeholder="Адресс админ панели" name="admin" value="apanel">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-group-label">
+            Наценка в % 
+          </label>
+          <div class="input-group">
+            <input type="number" class="form-control" name="markup" min="0" step="0.01" value="20">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-group-label">
+            Валюта
+          </label>
+          <div class="input-group">
+            <input type="text" class="form-control" name="currency" value="₴">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="settings-panel">
+      <div class="settings-panel-header">
+        <p>Оптимизация</p>
+      </div>
+      <div class="settings-panel-body">
+        <div class="form-group">
+          <label class="form-group-label">
+            Время жизни cookie, в днях
+          </label>
+          <div class="input-group">
+            <input type="number" class="form-control" placeholder="Время жизни cookie, в днях" name="cookie_time" value="1.0457091691152E-246">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-group-label">
+            Время онлайна, в секундах
+          </label>
+          <div class="input-group">
+            <input type="number" class="form-control" placeholder="Время онлайна, в секундах" name="online_time" value="180">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-group-label">
+            Ключ шифрования
+          </label>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Ключ шифрования" name="salt" value="34e695f7be39db24534ede8b5554be7c">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="settings-panel">
+      <div class="settings-panel-header">
+        <p>Контакты</p>
+      </div>
+      <div class="settings-panel-body">
+        <div class="form-group">
+          <label class="form-group-label">
+            vk
+          </label>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="vk" name="vk" value="https://vk.com/">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-group-label">
+            facebook
+          </label>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="facebook" name="facebook" value="https://www.facebook.com/kabstudio/">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-group-label">
+            google
+          </label>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="google" name="google" value="https://google.com/">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-group-label">
+            instagram
+          </label>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="instagram" name="instagram" value="https://www.instagram.com/">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-group-label">
+            Email
+          </label>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Email" name="email" value="office@lr-service.com.ua">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-group-label">
+            Телефон
+          </label>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Телефон" name="phone" value="+7 915 123-34-79">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-group-label">
+            Факс
+          </label>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Факс" name="fax" value="+7 915 123-34-79">
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <form action="" method="post" id="settingsForm-3">
+    <div class="settings-panel">
+      <div class="settings-panel-header">
+        <p>Настройки</p>
+      </div>
+      <div class="settings-panel-body">
+        <div class="form-group">
+          <label class="form-group-label">
+            За сколько часов до приема отправлять сообщение пациенту
+          </label>
+          <div class="input-group">
+            <input type="number" name="sms_delay_patient" step="0.01" class="form-control" placeholder="За сколько часов до приема отправлять сообщение пациенту" value="24">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-group-label">
+            За сколько часов до приема отправлять сообщение врачу
+          </label>
+          <div class="input-group">
+            <input type="number" name="sms_delay_doctor" step="0.01" class="form-control" placeholder="За сколько часов до приема отправлять сообщение врачу" value="1">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="settings-panel">
+      <div class="settings-panel-header">
+        <p>Getway настройки</p>
+      </div>
+      <div class="settings-panel-body">
+        <div class="form-group">
+          <label class="form-group-label">
+            Адрес службы
+          </label>
+          <div class="input-group">
+            <input type="text" name="sms_service[smsclub][serv_addr]" class="form-control" placeholder="Адрес службы" value="https://gate.smsclub.mobi/http/">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-group-label">
+            Логин
+          </label>
+          <div class="input-group">
+            <input type="text" name="sms_service[smsclub][login]" class="form-control" placeholder="Логин" value="79151233479">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-group-label">
+            Пароль
+          </label>
+          <div class="input-group">
+            <input type="text" name="sms_service[smsclub][password]" class="form-control" placeholder="Пароль" value="rxxoo65">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-group-label">
+            Баланс
+          </label>
+          <div class="input-group">
+            <div class="alert alert-success"><!-- для красной подсветки доюавить класс alert-non-success-->
+              <span>₴</span>
+              <span id="balance">17.25</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-group-label">
+            SMS кредит
+          </label>
+          <div class="input-group">
+            <div class="alert alert-non-success"><!-- для красной подсветки доюавить класс alert-non-success-->
+              <span><i class="fa fa-credit-card-alt" aria-hidden="true"></i></span>
+              <span id="balance">0.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</section>
+</div>
+<!-- --------------------------------------------------------------->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="libs/jquery-3.2.1.min.js"></script>
+<script src="libs/jquery-ui.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/core.js"></script>
+</body>
+</html>
